@@ -26,30 +26,29 @@ Node* convertArr2LL(vector<int>arr){
 }
 
 Node* removekth(Node * head, int k){
-    if(head==NULL) return head;
-    if(k==1){
+    if(head==NULL) return NULL;
+    if(k==0){
         Node* temp=head;
         head=head->next;
         free(temp);
         return head;
     }
-    
+    int c=0;
     Node* temp=head;
     Node* prev=NULL;
-    int count=0;
-    while(temp != NULL){
-        count++;
-        if(count==k){
-            prev->next=prev->next->next;
-            free(temp);
-            break;
-        }
-        prev=temp;
-        temp=temp->next;
+    while (temp!=NULL) {
+       c++;
+       if(c==k+1){
+        prev->next=prev->next->next;
+        free(temp);
+        break;
+       }
+       prev=temp;
+       temp=temp->next;
     }
-    
     return head;
 }
+
 
 void printll(Node* head){
     Node* q=head;
@@ -61,7 +60,7 @@ void printll(Node* head){
 int main(){
     vector<int>arr={3,4,5,6,7,8};
     Node* head=convertArr2LL(arr);
-    removekth(head,1);
+    removekth(head,0);
     printll(head);
     return 0;
 }
