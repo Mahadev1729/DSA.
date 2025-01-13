@@ -32,12 +32,18 @@ void printll(Node* head){
     }
 }
 Node* reverse(Node* head){
-    if(head== NULL || head->next==NULL ) return head;
-    
+    if(head== NULL || head->next==NULL ) return head;// 1 0r 0 node
+    Node* newHead=reverse(head->next);
+    Node* front=head->next;
+    front->next=head;
+    head->next=NULL;
+    return newHead;
+
 }
 int main(){
     vector<int>arr={23,4,56,8};
     Node* head=convertArr2LL(arr);
-    printll(head);
+    Node* head1=reverse(head);
+    printll(head1);
     return 0;  
 }
