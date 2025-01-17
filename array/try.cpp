@@ -2,7 +2,7 @@
 #include<vector>
 using namespace std;
 void subset(vector<int>&V,vector<int>&res,int i){
- 0;
+ 
     if(i==V.size()){
         for(auto it:res){
             cout<<it<<" ";

@@ -1,0 +1,2 @@
+1.Recursion
+ # when a fuction calls itself until a specific condition met
