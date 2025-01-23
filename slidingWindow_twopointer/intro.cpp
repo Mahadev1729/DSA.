@@ -12,7 +12,7 @@ int main(){
       int r=k-1;
       int sum=0;
       int maxSum=-1;
-      for(l=0;l<=r;l++){
+      for(l=0;l<r;l++){
         sum+=arr[l];
       }
       cout<<sum<<endl;
