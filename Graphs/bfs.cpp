@@ -5,7 +5,7 @@ using namespace std;
 
 class Solution{
     public:
-    vector<int> bfs(int V,vector<int.adj[]){
+    vector<int> bfs(int V,vector<int>adj[]){
            int vis[n]={0};
            vis[0]=1;
            queue<int>q;
