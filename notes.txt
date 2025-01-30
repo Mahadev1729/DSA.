@@ -2,4 +2,4 @@
    # when a fuction calls itself until a specific condition met
    # stackoverflow:when numrous recursive calls waiting in stack
    # base condition is required for recursion to avoid infinite calls
-   
+   # it follows some common template
