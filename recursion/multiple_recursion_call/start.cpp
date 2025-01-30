@@ -10,7 +10,7 @@ int fib(int n){
     // return fib(n-1)+fib(n-2);
 }
 int main(){
-    int res=fib(5);
+    int res=fib(4);
     cout<<res;
     return 0;
 }
