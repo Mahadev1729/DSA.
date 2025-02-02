@@ -2,3 +2,9 @@ Graphs:{Node,edge}-1.directed Graphs
                    2-undirected Graph
 * cyclic Graph
 * acyclic Graph
+
+traversal methods:
+    1.BFS
+    --- Levelwise traversal
+    2.DFS
+    --- Depthwise traversal
