@@ -32,27 +32,24 @@ void printll(Node* head){
         q=q->next;
     }
 }
-Node* reverse(Node* head){
-    stack<int>st;
-    Node* temp=head;
-    while(temp!=NULL){
-        st.push(temp->data);
-        temp=temp->next;
+bool isPalindrome(Node* head) {
+        stack<int>st;
+        ListNode* temp=head;
+        while(temp!=NULL){
+            st.push(temp->data);
+            temp=temp->next;
+        }
+        temp=head;
+        while(temp!=NULL){
+            if(temp->data!=st.top()) return false;
+            temp=temp->next;
+            st.pop();
+        }
+        return true;
     }
-    temp=head;
-    while(temp!=NULL){
-        temp->data=st.top();
-        st.pop();
-        temp=temp->next;
-    }
-    return head;
-}
-
-
 int main(){
     vector<int>arr={23,4,56,8};
     Node* head=convertArr2LL(arr);
-    Node* head1=reverse(head);
-    printll(head1);
+    printll(head);
     return 0;  
 }

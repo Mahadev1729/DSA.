@@ -1,6 +1,6 @@
+
 #include<iostream>
 #include<vector>
-#include<stack>
 using namespace std;
 
 class Node{
@@ -32,27 +32,18 @@ void printll(Node* head){
         q=q->next;
     }
 }
-Node* reverse(Node* head){
-    stack<int>st;
+bool optmize_palindrome(Node* head){
     Node* temp=head;
-    while(temp!=NULL){
-        st.push(temp->data);
-        temp=temp->next;
+    Node* tail=head;
+    while(tail!=NULL){
+        tail=tail->next;
     }
-    temp=head;
-    while(temp!=NULL){
-        temp->data=st.top();
-        st.pop();
-        temp=temp->next;
-    }
-    return head;
+    while(temp!)
 }
-
 
 int main(){
     vector<int>arr={23,4,56,8};
     Node* head=convertArr2LL(arr);
-    Node* head1=reverse(head);
-    printll(head1);
+    printll(head);
     return 0;  
 }
