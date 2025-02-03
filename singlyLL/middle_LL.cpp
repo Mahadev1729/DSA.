@@ -41,6 +41,10 @@ int count(Node* head){
     }
     return cnt;
 }
+
+Node* middle_ofLL(Node* head){
+    
+}
 int main(){
     vector<int>arr={23,4,56,8};
     Node* head=convertArr2LL(arr);
