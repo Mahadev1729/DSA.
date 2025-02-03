@@ -40,6 +40,7 @@ bool isPalindrome(Node* head) {
             temp=temp->next;
         }
         temp=head;
+        // top  element of the stack
         while(temp!=NULL){
             if(temp->data!=st.top()) return false;
             temp=temp->next;
