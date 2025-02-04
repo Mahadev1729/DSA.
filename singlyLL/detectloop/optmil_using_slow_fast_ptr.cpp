@@ -31,9 +31,21 @@ void printll(Node* head){
         q=q->next;
     }
 }
+
+bool optimal_detect_loop(Node* head){
+    Node* fast=head;
+    Node* slow=head;
+    while(fast!=NULL && fast->next!=NULL){
+        slow=slow->next;
+        fast=fast->next->next;
+        if(slow==fast) return true;
+    }
+    return false;
+}
 int main(){
     vector<int>arr={23,4,56,8};
     Node* head=convertArr2LL(arr);
+    cout<<optimal_detect_loop(head)<<endl;
     printll(head);
     return 0;  
 }
