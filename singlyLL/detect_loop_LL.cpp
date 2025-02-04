@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+#include <unordered_map>
 using namespace std;
 
 class Node{
@@ -32,9 +33,23 @@ void printll(Node* head){
     }
 }
 
+bool detect_loop_LL(Node* head){
+    unordered_map<Node*,int>mp;
+    Node* temp=head;
+    while(temp!=NULL){
+        if(mp.find(temp)!=mp.end()){
+            return true;
+        }
+        mp[temp]=1;
+        temp=temp->next;
+    }
+    return false;
+}
 int main(){
     vector<int>arr={23,4,56,8};
     Node* head=convertArr2LL(arr);
+    cout<<detect_loop_LL(head);
+    cout<<endl;
     printll(head);
     return 0;  
 }
