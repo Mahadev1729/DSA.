@@ -33,12 +33,7 @@ void printll(Node* head){
     }
 }
 bool optmize_palindrome(Node* head){
-    Node* temp=head;
-    Node* tail=head;
-    while(tail!=NULL){
-        tail=tail->next;
-    }
-    while(temp!)
+      
 }
 
 int main(){
