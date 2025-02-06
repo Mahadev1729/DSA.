@@ -40,14 +40,22 @@ int count(Node* head){
     }
     return cnt;
 }
+
 Node* delete_middle_ll(Node* head){
-    Node* slow=head;
-    Node* fast=head;
-    while(fast!=NULL && fast->next!=NULL){
-        slow=slow->next;
-        fast=fast->next->next;
+    int res= count(head)/2;
+    Node* temp=head;
+    
+    while(temp!=NULL){
+       res--;
+       if(res==0){
+        Node* middleNode=temp->next;
+        temp->next=temp->next->next;
+        free(middleNode);
+        break;
+       }
+       temp=temp->next;
     }
-    return slow;
+    return head;
 }
 int main(){
     vector<int>arr={23,4,56,8,90};
