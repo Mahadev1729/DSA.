@@ -31,7 +31,15 @@ void printll(Node* head){
         q=q->next;
     }
 }
-
+int count(Node* head){
+    Node* temp=head;
+    int cnt=0;
+    while(temp!=NULL){
+      cnt++;
+      temp=temp->next;
+    }
+    return cnt;
+}
 Node* delete_middle_ll(Node* head){
     Node* slow=head;
     Node* fast=head;
