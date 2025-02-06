@@ -31,9 +31,23 @@ void printll(Node* head){
         q=q->next;
     }
 }
+
+Node* delete_middle_ll(Node* head){
+    Node* slow=head;
+    Node* fast=head;
+    while(fast!=NULL && fast->next!=NULL){
+        slow=slow->next;
+        fast=fast->next->next;
+    }
+    return slow;
+}
 int main(){
-    vector<int>arr={23,4,56,8};
+    vector<int>arr={23,4,56,8,90};
+
     Node* head=convertArr2LL(arr);
-    printll(head);
+    Node* middleNode=delete_middle_ll(head);
+    printll(middleNode);
+    
+    // printll(head);
     return 0;  
 }
