@@ -12,7 +12,9 @@ void hashStringMap(string s){
     }
 }
 int main(){
-    string s1="AGHGHDGHAAAAgffffff";
+    string s1;
+    cout<<"Enter your string:"<<endl;
+    getline(cin,s1);
     hashStringMap(s1);
     return 0;
 }
