@@ -1,17 +1,16 @@
-#include<iostream>
-#include<vector>
+#include<bits/stdc++.h>
 
 using namespace std;
 
-int binarySearch(vector<int>nums, int target){
-   
+vector<int> binarySearch(vector<int>nums, int target){
+    vector<int>res;
     int n=nums.size();
     int l=0;
     int r=n-1;
     while(l<=r){
         int mid=(l+r)/2;
         if(nums[mid]==target){
-            return mid;
+            res.push_back(mid);
         }
         else if(nums[mid]<target){
             l=mid+1;
@@ -20,12 +19,13 @@ int binarySearch(vector<int>nums, int target){
             r=mid-1;
         }
     }
+    return res;
 }
 
 int main(){
     vector<int>arr={23,45,56,78};
-
-    int res=binarySearch(arr,56);
-    cout<<res;
+    vector<int>sol;
+    int sol=binarySearch(arr,56);
+    cout<<sol;
     return 0;
 }
