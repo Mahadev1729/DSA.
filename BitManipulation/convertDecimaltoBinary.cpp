@@ -15,7 +15,10 @@ string convert2Binary(int n){
 }
 
 int main(){
-    string sol=convert2Binary(2);
+    int x;
+    cout<<"Enter a number to conver decimal to binary:";
+    cin>>x;
+    string sol=convert2Binary(x);
     cout<<sol;
     return 0;
 }
