@@ -3,11 +3,11 @@
 using namespace std;
 
 int convertDecimaltoBinary(string bS){
-    reverse(bS.begin(),bS.end());
+    // reverse(bS.begin(),bS.end());
     int n=bS.length();
     int dS=0;
     int i;
-    for(i=0;i<n;i++){
+    for(i=n;i>0;i--){
        dS+=bS[i]*pow(2,i);
     }
     return dS;
