@@ -1,24 +1,24 @@
-#include<bits/stdc++.h>
-
+#include <iostream>
+#include <cmath>
 using namespace std;
 
-int convertDecimaltoBinary(string bS){
-    // reverse(bS.begin(),bS.end());
-    int n=bS.length();
-    int dS=0;
-    int i;
-    for(i=n;i>0;i--){
-       dS+=bS[i]*pow(2,i);
+// Function to convert binary (string) to decimal
+int binaryToDecimal(const string& binary) {
+    int decimal = 0;
+    int length = binary.length();
+    
+    for (int i = 0; i < length; i++) {
+        if (binary[length - 1 - i] == '1') {
+            decimal += pow(2, i);
+        }
     }
-    return dS;
+    return decimal;
 }
 
-int main()
-{
-    string inputString;
-    cout<<"Enter the input string:";
-    cin>>inputString;
-    int ans=convertDecimaltoBinary(inputString);
-    cout<<ans;
+int main() {
+    string binary;
+    cout << "Enter a binary number: ";
+    cin >> binary;
+    cout << "Decimal equivalent: " << binaryToDecimal(binary) << endl;
     return 0;
 }
