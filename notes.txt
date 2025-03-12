@@ -3,3 +3,8 @@
    # stackoverflow:when numrous recursive calls waiting in stack
    # base condition is required for recursion to avoid infinite calls
    # it follows some common template
+   
+ 2.Bitmanipulation:
+   # operation on bits
+   # set bit 
+   # count of flips  
