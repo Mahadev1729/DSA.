@@ -23,9 +23,11 @@ vector<int> binarySearch(vector<int>nums, int target){
 }
 
 int main(){
-    vector<int>arr={23,45,56,78};
-    vector<int>sol;
-    int sol=binarySearch(arr,56);
-    cout<<sol;
+    vector<int>arr={23,45,56,56,78};
+    
+    vector<int>sol=binarySearch(arr,56);
+    for(auto it:sol){
+        cout<<it;
+    }
     return 0;
 }
