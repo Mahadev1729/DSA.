@@ -14,7 +14,7 @@ void hashMap(vector<int>arr){
 }
 
 int main(){
-    vector<int>nums={1,2,3,1,12};
+    vector<int>nums={1,2,3,1,1,2};
     hashMap(nums);
     return 0;
 }
