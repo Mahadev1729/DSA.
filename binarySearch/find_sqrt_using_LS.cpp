@@ -17,7 +17,7 @@ int find_sqrt_using_LS(int n){
 }
 
 int main(){
-    int res=find_sqrt_using_LS(49);
+    int res=find_sqrt_using_LS(28);
     cout<<res;
     return 0;
 }
