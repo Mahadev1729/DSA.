@@ -8,3 +8,8 @@
    # operation on bits
    # set bit 
    # count of flips  
+ 3.Binary search Method:
+   #lower bound
+   #Upper bound
+   #sqrt of number
+   #Nth root number 
