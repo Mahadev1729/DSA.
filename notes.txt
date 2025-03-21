@@ -13,3 +13,6 @@
    #Upper bound
    #sqrt of number
    #Nth root number 
+
+ 4.Trees
+   --types of Trees   
