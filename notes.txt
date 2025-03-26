@@ -18,3 +18,4 @@
    --types of Trees:
      1.Full Binary tree:
        either each node has 0 or 2 children 
+       start with rep in c++
