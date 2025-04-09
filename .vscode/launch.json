@@ -44,8 +44,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/Dev_SKP/DSA/twopionter_slidingWindow_template",
-      "program": "d:/Dev_SKP/DSA/twopionter_slidingWindow_template/build/Debug/outDebug",
+      "cwd": "d:/Dev_SKP/DSA/Trees",
+      "program": "d:/Dev_SKP/DSA/Trees/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
