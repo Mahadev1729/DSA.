@@ -5,7 +5,7 @@ using namespace std;
 void print_all_subsequence(int indx,vector<int>&ds,vector<int>nums){
     int n=nums.size();
     if(indx==n){
-        int sum=0;
+       
         for(auto it:ds){
             cout<<it<<" ";
             
