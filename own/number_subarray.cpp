@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int generateAllsubarray(vector<int>arr, int target){
+void generateAllsubarray(vector<int>arr, int target){
     int n=arr.size();
     int count=0;
     for(int i=0;i<n;i++){
@@ -12,17 +12,20 @@ int generateAllsubarray(vector<int>arr, int target){
             sum+=arr[j];
 
             if(sum==target){
+                cout<<arr[j]<<" ";
+                
                 count++;
             }
         }
         // cout<<endl;
     }
-    return count;
+    // return count;
 }
 
 int main(){
     vector<int>nums={2,3,4,1,5};
-    int res=generateAllsubarray(nums,5x);
-    cout<<res;
+    // int res=generateAllsubarray(nums,5);
+    // cout<<res;
+    generateAllsubarray(nums,5);
     return 0;
 }

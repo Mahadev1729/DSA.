@@ -6,7 +6,8 @@ void solve(int indx, int current_sum, int target,vector<int>& nums, vector<int>&
     int n = nums.size();
     if (indx == n) {
         if (current_sum == target) {
-            result.push_back(ds);  // Store only if sum matches target
+             // Store only sum matches with 
+            result.push_back(ds); 
         }
         return;
     }
