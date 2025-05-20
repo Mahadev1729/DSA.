@@ -11,6 +11,7 @@ class Solution {
         if (index == n) {
             totalSum += currentXor;
             return;
+            
         }
         
         
