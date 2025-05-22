@@ -44,8 +44,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/Dev_SKP/DSA/slidingWindow_twopointer",
-      "program": "d:/Dev_SKP/DSA/slidingWindow_twopointer/build/Debug/outDebug",
+      "cwd": "d:/Dev_SKP/DSA/LeetCode",
+      "program": "d:/Dev_SKP/DSA/LeetCode/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

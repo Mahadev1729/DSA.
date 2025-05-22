@@ -5,12 +5,10 @@ using namespace std;
 void print_all_subsequence(int indx,vector<int>&ds,vector<int>nums){
     int n=nums.size();
     if(indx==n){
-       
-        for(auto it:ds){
+         for(auto it:ds){
             cout<<it<<" ";
             
         }
-        
         if(ds.size()==0){
             cout<<"[]";
         }

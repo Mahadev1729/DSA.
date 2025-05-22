@@ -26,4 +26,5 @@ int main(){
     vector<int>ds;
     int sum=2;
     print_subsequence_sumK(0,ds,0,sum,arr);
+    return 0;
 }
