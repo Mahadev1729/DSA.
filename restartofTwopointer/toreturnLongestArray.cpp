@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-
+//{2, 5, 1, 7, 10}-input array
 vector<int> longestSubarray(vector<int> arr, int k) {
     int n = arr.size();
     int r = 0, l = 0;

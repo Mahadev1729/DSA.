@@ -10,7 +10,7 @@ int constWindow(vector<int>arr,int k){
     // for(auto it:arr){
     //     sum+=it;
     // }
-    for(int i=0;i<n;i++){
+    for(int i=0;i<k;i++){
         sum+=arr[i];
     }
     while(r<n-1){
