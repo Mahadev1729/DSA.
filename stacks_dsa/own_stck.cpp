@@ -1,7 +1,7 @@
 ﻿#include<bits/stdc++.h>
 using namespace std;
 vector<int>arr;
-
+vector<int>minArr;
 
 void push(int x){
     arr.push_back(x);
@@ -20,10 +20,18 @@ void display(){
         cout<<arr[i]<<" ";
     }
 }
+int getMin() {
+    if (minArr.empty()) {
+        cout << "Stack is empty\n";
+        return -1; // or some sentinel value
+    }
+    return minArr.back();
+}
 int main(){
   push(34);
   push(23);
   pop();
   display();
+  cout<<getMin()<<endl;
   return 0;
 }
