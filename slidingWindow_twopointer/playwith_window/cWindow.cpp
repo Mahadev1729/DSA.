@@ -26,6 +26,7 @@ int constWindow(vector<int>arr,int k){
 
 int main(){
     vector<int>nums={1,2,3,4,5,6};
+    sort(nums.begin(),nums.end());
     int res=constWindow(nums,4);
     cout<<res;
     return 0;

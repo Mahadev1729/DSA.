@@ -1,5 +1,5 @@
-class Solution {
-public:
+#include<bits/stdc++.h>
+using namespace std;
     int maxScore(vector<int>& cardPoints, int k) {
         int n=cardPoints.size();
        int lsum=0;
@@ -13,10 +13,15 @@ public:
        for(int i=k-1;i>=0;i--){
         lsum-=cardPoints[i];
         rsum+=cardPoints[rindx];
-        rindx=rindx-1;
+        rindx--;
         maxSum=max(maxSum,rsum+lsum);
        }
       return maxSum;
-       
     }
-};
+       
+int main(){
+    vector<int>arr={12,11,3,4,7,8,9};
+    int res=maxScore(arr,2);
+    cout<<res;
+    return res;
+}
