@@ -14,8 +14,7 @@ int main()
             i++;
         }
         else
-        {
-            arr3[k]=arr2[j];
+        { arr3[k]=arr2[j];
            k++;
            j++;
         }
