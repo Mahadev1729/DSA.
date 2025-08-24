@@ -18,6 +18,8 @@ int main(){
     vector<int>nums={1,2,3};
     vector<vector<int>>res;
     permuate_array(nums,0,res);
+
+    sort(res.begin(),res.end());
     for(const auto& row:res){
         for(const auto& elem:row){
             cout<<elem;

@@ -1,21 +1,53 @@
-#include<bits/stdc++.h>
-
+#include <bits/stdc++.h>
 using namespace std;
 
-struct Node{
+struct Node {
     int data;
-    struct Node* left;
-    struct Node* right;
-    Node(int val){
-        data=val;
-        left=right=NULL;
+    Node* left;
+    Node* right;
+
+    Node(int val) {
+        data = val;
+        left = right = NULL;
     }
 };
 
-int main(){
-    struct Node* root=new Node(1);
-    root->left=new Node(2);
-    root->right=new Node(3);
-    root->left->right=new Node(5);
+// Function to build tree recursively
+Node* buildTree() {
+    int val;
+    cout << "Enter value (-1 for NULL): ";
+    cin >> val;
+
+    if (val == -1) return NULL;
+
+    
+
+    Node* root = new Node(val);
+
+    cout << "Enter left child of " << val << endl;
+    root->left = buildTree();
+
+    cout << "Enter right child of " << val << endl;
+    root->right = buildTree();
+    
+
+    return root;
+}
+
+// Inorder traversal (for testing)
+void inorder(Node* root) {
+    if (root == NULL) return;
+    inorder(root->left);
+    cout << root->data << " ";
+    inorder(root->right);
+}
+
+int main() {
+    Node* root = buildTree();
+
+    cout << "\nInorder Traversal: ";
+    inorder(root);
+    cout << endl;
+
     return 0;
 }
