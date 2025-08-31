@@ -44,8 +44,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/Dev_SKP/DSA/own",
-      "program": "d:/Dev_SKP/DSA/own/build/Debug/outDebug",
+      "cwd": "d:/Dev_SKP/DSA/sorting",
+      "program": "d:/Dev_SKP/DSA/sorting/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
