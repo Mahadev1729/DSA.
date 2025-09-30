@@ -9,7 +9,6 @@ void printArray(vector<int>&arr){
 }
 
 void insertionSort(vector<int>&nums,int n){
-    
     for(int i=0;i<n;i++){
         int j=i;
         while(j>0 && nums[j-1]>nums[j]){
