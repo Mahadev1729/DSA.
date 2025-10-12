@@ -22,3 +22,12 @@ vector<int> powerset(vector<int>arr){
     return ans;
     
 }
+
+int main(){
+    vector<int>arr={12,23,34,56};
+    vector<int>res=powerset(arr);
+    for(auto it:res){
+        cout<<it<<" ";
+    }
+    return 0;
+}

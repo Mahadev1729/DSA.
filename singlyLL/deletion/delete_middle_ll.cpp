@@ -53,7 +53,9 @@ Node* delete_middle_ll(Node* head){
         free(middleNode);
         break;
        }
-       temp=temp->next;
+       else{       
+        temp=temp->next;
+       }
     }
     return head;
 }

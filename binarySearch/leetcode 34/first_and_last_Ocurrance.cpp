@@ -11,10 +11,8 @@ vector<int> first_last_Ocurrance(vector<int>nums,int x){
             if(first==-1) first=i;
             last=i;
         }
-        
     }
     return {first,last};
-
 }
 
 int main(){

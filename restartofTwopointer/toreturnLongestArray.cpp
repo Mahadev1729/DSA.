@@ -7,25 +7,19 @@ vector<int> longestSubarray(vector<int> arr, int k) {
     int r = 0, l = 0;
     int sum = 0;
     int maxLen = 0, startIdx = 0, endIdx = 0;
-
     while (r < n) {
         sum += arr[r];
-
         while (sum > k) {  
             sum -= arr[l];
             l++;
         }
-
         if (r - l + 1 > maxLen) {
             maxLen = r - l + 1;
             startIdx = l;
             endIdx = r;
         }
-        
         r++;
     }
-
-   
     return vector<int>(arr.begin() + startIdx, arr.begin() + endIdx + 1);
 }
 

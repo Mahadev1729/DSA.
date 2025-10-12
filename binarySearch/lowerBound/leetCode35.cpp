@@ -1,6 +1,9 @@
-class Solution {
-public:
-    int searchInsert(vector<int>& nums, int target) {
+#include<bits/stdc++.h>
+
+using namespace std;
+
+
+int searchInsert(vector<int>& nums, int target) {
         int n=nums.size();
         int ans=n;
         int low=0,high=n-1;
@@ -16,4 +19,11 @@ public:
         }
         return ans;
     }
-};
+    
+    int main(){
+        vector<int>arr={2,3,4,5,6,7,9};
+        int res=searchInsert(arr,8);
+        cout<<res;
+        return 0;
+    }
+
