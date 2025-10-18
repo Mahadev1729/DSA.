@@ -1,6 +1,4 @@
-#include<iostream>
-#include<vector>
-#include <unordered_map>
+﻿#include<bits/stdc++.h>
 using namespace std;
 
 class Node{
@@ -33,23 +31,28 @@ void printll(Node* head){
     }
 }
 
-bool detect_loop_LL(Node* head){
-    unordered_map<Node*,int>mp;
+bool isPalidrome(Node* head){
     Node* temp=head;
-    while(temp!=NULL){
-        if(mp.find(temp)!=mp.end()){
-            return true;
-        }
-        mp[temp]=1;
+    stack<int>st;
+    while(temp!=nullptr){
+        st.push(temp->data);
         temp=temp->next;
     }
-    return false;
+
+   Node* temp1=head;
+   while(temp1!=nullptr){
+    if(temp1->data!=st.top()) return false;
+    temp=temp->next;
+    st.pop();
+
+   }
+   return false;
 }
 int main(){
-    vector<int>arr={23,4,56,8,56};
+    vector<int>arr={23,4,4,23};
     Node* head=convertArr2LL(arr);
-    cout<<detect_loop_LL(head);
-    cout<<endl;
     printll(head);
+    cout<<endl;
+    cout<<isPalidrome(head);
     return 0;  
 }
