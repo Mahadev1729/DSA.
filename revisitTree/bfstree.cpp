@@ -52,13 +52,7 @@ int main(){
     root->left->left=new TreeNode(14);
     root->left->right=new TreeNode(15);
     
-    // vector<vector<int>>vec=levelorder(root);
-    // for (const auto& row : vec) {         
-    //     for (const auto& val : row) {      
-    //         cout << val << " ";
-    //     }
-    //     cout << endl;
-    // }
+    
 
     vector<int>ans=levelorder(root);
     for(auto it:ans){
