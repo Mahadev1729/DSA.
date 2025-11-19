@@ -10,10 +10,6 @@ void generate_allsub_fun(int indx, vector<int> &arr, vector<int> &ds, int n) {
         cout << endl;
         return;
     }
-        
-    
-
-    
     ds.push_back(arr[indx]);
     generate_allsub_fun(indx + 1, arr, ds, n);
     ds.pop_back();

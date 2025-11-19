@@ -29,12 +29,12 @@ int main() {
      solve(0, 0, target, arr, ds, result);
 
     int cnt=0;
-    int max_len=INT_MIN;
+    
 
     // Print the result
     for (const auto& subseq : result) {
         for (int num : subseq) {
-            cout<<num<<" ";
+            // cout<<num<<" ";
          
 
         }
