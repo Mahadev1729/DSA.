@@ -1,7 +1,7 @@
 ﻿#include <bits/stdc++.h>
 using namespace std;
 
-// Function to check if a string has all unique characters
+
 bool isUnique(const string &sr) {
     unordered_map<char, int> freq;
     for (char c : sr) {
@@ -15,17 +15,17 @@ bool isUnique(const string &sr) {
 
 
 int longest_substring_withoutrepeat(const string &s) {
-    int maxLen = 0;  // fixed: initialize to 0
+    int maxLen = 0;  
     int n = s.size();
 
     for (int i = 0; i < n; i++) {
         string sub = "";
         for (int j = i; j < n; j++) {
-            sub += s[j];  // append character
+            sub += s[j];  
             if (isUnique(sub)) {
                 maxLen = max(maxLen, (int)sub.size());
             } else {
-                break; // optional: stop early if duplicate found
+                break; 
             }
         }
     }

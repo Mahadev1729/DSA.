@@ -12,8 +12,9 @@ string shift_string(string s) {
 string expand_string(string input_string, int k) {
     string res = input_string;
     for (int i = 0; i < k; i++) {
-        string shifted = shift_string(res);
+        string shifted = shift_string(input_string);
         res += shifted;
+        input_string = shifted;
     }
     return res;
 }

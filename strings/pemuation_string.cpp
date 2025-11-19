@@ -14,7 +14,7 @@ public:
         for(int i=0;i<s1.size();i++){
             freq[s1[i]-'a']++;
         }
-        // window based search
+        
         int windowSize=s1.length();
 
         for(int i=0;i<s2.length();i++){
