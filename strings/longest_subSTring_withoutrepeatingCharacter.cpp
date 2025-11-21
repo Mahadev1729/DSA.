@@ -2,6 +2,7 @@
 using namespace std;
 
 
+
 bool isUnique(const string &sr) {
     unordered_map<char, int> freq;
     for (char c : sr) {
@@ -12,7 +13,6 @@ bool isUnique(const string &sr) {
     }
     return true;
 }
-
 
 int longest_substring_withoutrepeat(const string &s) {
     int maxLen = 0;  

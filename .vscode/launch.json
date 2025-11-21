@@ -44,8 +44,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/Dev_SKP/DSA/array",
-      "program": "d:/Dev_SKP/DSA/array/build/Debug/outDebug",
+      "cwd": "d:/Dev_SKP/DSA/strings/solforsubstringwithoutRepeatingChar",
+      "program": "d:/Dev_SKP/DSA/strings/solforsubstringwithoutRepeatingChar/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
