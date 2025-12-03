@@ -48,7 +48,7 @@ Node* insertAtK(Node* head,int k,int ele){
     if(k==1) return new Node(ele);
     else return nullptr;
    }
-   if(k==1){
+   if(k==1){  
     Node* temp=new Node(ele);
     temp->next=head;
     return head;
