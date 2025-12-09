@@ -16,6 +16,7 @@ string reverse_stack(string input){
 }
 
 
+
 int main(){
    string s="Mahadev";
    string ans=reverse_stack(s);
