@@ -1,0 +1,1 @@
+if (isFreqSame(freq1, freq2)) return true;
