@@ -7,9 +7,7 @@ int constWindow(vector<int>arr,int k){
     int l=0,r=k-1;
     int sum=0;
     int maxSum=INT_MIN;
-    // for(auto it:arr){
-    //     sum+=it;
-    // }
+    
     for(int i=0;i<k;i++){
         sum+=arr[i];
     }

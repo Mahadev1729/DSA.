@@ -135,6 +135,6 @@ void solve7(int n){
 int main(){
     // solve5(5);
     // solve6(5);
-    solve7(5);
+    solve5(5);
     return 0;
 }
