@@ -14,7 +14,7 @@ int longest_subarr_with_sumK(vector<int>&arr,int k){
             maxLen=max(maxLen,i+1);
         }
         int rem=sum-k;
-        if(preSumMap.find(rem)!=preSumMap.end()){
+        if(preSumMap.count(rem)){
             int len=i-preSumMap[rem];
             maxLen=max(maxLen,len);
         }

@@ -6,9 +6,9 @@ using namespace std;
 vector<int> two_sum(vector<int>arr,int target){
     unordered_map<int,int>mp;
     for(int i=0;i<arr.size();i++){
-        int more=target-arr[i];
-        if(mp.count(more)){
-            return {mp[more],i};
+        int rem=target-arr[i];
+        if(mp.count(rem)){
+            return {mp[rem],i};
         }
         mp[arr[i]]=i;
     }
@@ -23,5 +23,4 @@ int main(){
         cout<<it<<" ";
     }
     return 0;
-
 }
