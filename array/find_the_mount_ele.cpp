@@ -36,6 +36,5 @@ int peakIndexInMountainArray(vector<int>& arr) {
                 return i;
             }
         }
-        return -1;
-    }
+        return -1;   }
 
