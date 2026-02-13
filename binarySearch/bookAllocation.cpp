@@ -26,7 +26,7 @@ int linear_search_Solution(vector<int>&arr,int m){
         int countStud=fun_to_allocate(arr,pages);
         if(countStud==m){
             return pages;
-        }
+        }   
     }
     return -1;
 }

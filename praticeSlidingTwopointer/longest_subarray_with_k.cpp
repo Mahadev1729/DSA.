@@ -17,12 +17,10 @@ int max_subarrayKsum(vector<int>&nums,int kSum){
             sum-=nums[l];
             l++;
         }
-
         if(sum<=kSum){
             maxLen=max(maxLen,r-l+1);
         }
         r++;
-
     }
     return maxLen;
 }
