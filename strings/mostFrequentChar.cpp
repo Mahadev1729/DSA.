@@ -22,7 +22,7 @@ char solve(string &s){
 }
 
 int main(){
-   string s="mahadeve";
+   string s="mahadevefd";
    char c=solve(s);
    cout<<c;
    return 0;
