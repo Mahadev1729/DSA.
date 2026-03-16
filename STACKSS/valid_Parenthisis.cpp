@@ -13,7 +13,6 @@ bool is_Valid_Parenthisis(string s) {
                 if ((ch == ')' && top == '(') ||
                     (ch == '}' && top == '{') ||
                     (ch == ']' && top == '[')) {
-
                     st.pop();
                 } else {
                     return false;
