@@ -6,12 +6,14 @@ int solve(int n){
     int count=0;
     for(int i=1;i<=n;i++){
         if((n-i)<0) break;
-        cnt++;
+        count++;
         n=n-i;
     }
     return count;
 }
 
 int main(){
-  int 
+  int res=solve(5);
+  cout<<res;
+  return 0;
 }
