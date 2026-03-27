@@ -8,7 +8,7 @@ int solve(vector<int>&nums){
     int result;
     for(int it:nums){
         freq[it]++;
-        if(freq[it]>maxFreq){
+        if(freq[it]>maxFreq ||(freq[it]==maxFreq && it>result) ){
             maxFreq=nums[it];
             result=it;
         }
@@ -17,7 +17,7 @@ int solve(vector<int>&nums){
 }
 
 int main(){
-   vector<int>nums={1,2,1,1,1,3};
+   vector<int>nums={2,2,1,1,1,3,2};
    int res;
    res=solve(nums);
    cout<<res;
