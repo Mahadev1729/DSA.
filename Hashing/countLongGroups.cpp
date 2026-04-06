@@ -3,7 +3,7 @@
 using namespace std;
 
 int findDigitSum(int val){
-    int temp=val;
+    
     int sum=0;
     while(val!=0){
         sum+=val%10;
