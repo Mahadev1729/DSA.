@@ -22,7 +22,7 @@ string solve(const string &s) {
     res += s[n - 1];
     res += to_string(count);
 
-    return (res.length() >= s.length()) ? s : res;
+    return res;
 }
 
 int main() {
