@@ -1,37 +1,32 @@
-﻿#include <iostream>
+﻿#include<bits/stdc++.h>
+
 using namespace std;
 
-int main() {
-    int n;
-    cin >> n;
-
-    // Upper half
-    for (int i = 1; i <= n; i++) {
-
-        // Print leading spaces
-        for (int j = 1; j <= n - i; j++)
-            cout << " ";
-
-        // Print stars
-        for (int j = 1; j <= i; j++)
-            cout << "* ";
-
-        cout << endl;
+void solve_pattern(int n){
+    // upper half
+    for(int i=1;i<=n;i++){
+        for(int j=i;j<n;j++){
+            cout<<" ";
+        }
+        for(int j=1;j<=(2*i-1);j++){
+            cout<<"* ";
+        }
+        cout<<endl;
     }
+    // lower half
+    for(int i=n-1;i>=1;i--){
+        for(int j=n;j>i;j--){
+            cout<<" ";
 
-    // Lower half
-    for (int i = n - 1; i >= 1; i--) {
-
-        // Print leading spaces
-        for (int j = 1; j <= n - i; j++)
-            cout << " ";
-
-        // Print stars
-        for (int j = 1; j <= i; j++)
-            cout << "* ";
-
-        cout << endl;
+        }
+        for(int j=1;j<=(2*i-1);j++){
+            cout<<"* ";
+        }
+        cout<<endl;
     }
+}
 
+int main(){
+    solve_pattern(4);
     return 0;
 }
