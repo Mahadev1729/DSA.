@@ -32,26 +32,24 @@ void printll(Node* head){
     }
 }
 
-Node* swap_data(Node* head,int i,int j){
+Node* swap_node_data(Node* head,int i,int j){
     Node* curr1=head;
+    Node* curr2=head;
     for(int k=0;k<i;k++){
         curr1=curr1->next;
     }
-    Node* curr2=head;
     for(int k=0;k<j;k++){
         curr2=curr2->next;
     }
 
     swap(curr1->data,curr2->data);
-
     return head;
-
 }
 int main(){
     vector<int>arr={23,4,56,8};
     Node* head=convertArr2LL(arr);
 
-    Node* ans=swap_data(head,1,2);
+    Node* ans=swap_node_data(head,1,2);
 
     printll(ans);
     return 0;  
